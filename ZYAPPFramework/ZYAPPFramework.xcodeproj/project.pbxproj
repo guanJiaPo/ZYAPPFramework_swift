@@ -1,0 +1,1257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1323F2948AF232F8E4E67125 /* Pods_ZYAPPFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839F38D770534A0BA5102A89 /* Pods_ZYAPPFrameworkUITests.framework */; };
+		391C1B9022366C3B0044ECAF /* UINavigationBar+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */; };
+		3998E3E1222F5D44002FF98D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E3E0222F5D44002FF98D /* AppDelegate.swift */; };
+		3998E3E6222F5D44002FF98D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E4222F5D44002FF98D /* Main.storyboard */; };
+		3998E3E8222F5D46002FF98D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E7222F5D46002FF98D /* Assets.xcassets */; };
+		3998E3EB222F5D46002FF98D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E9222F5D46002FF98D /* LaunchScreen.storyboard */; };
+		3998E3F6222F5D47002FF98D /* ZYAPPFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E3F5222F5D47002FF98D /* ZYAPPFrameworkTests.swift */; };
+		3998E401222F5D47002FF98D /* ZYAPPFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E400222F5D47002FF98D /* ZYAPPFrameworkUITests.swift */; };
+		3998E45B222F67EA002FF98D /* MDHTMLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E424222F67E9002FF98D /* MDHTMLLabel.m */; };
+		3998E45D222F67EA002FF98D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E42A222F67E9002FF98D /* UIScrollView+MJRefresh.m */; };
+		3998E45E222F67EA002FF98D /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E42B222F67E9002FF98D /* MJRefreshConst.m */; };
+		3998E45F222F67EA002FF98D /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3998E42F222F67E9002FF98D /* MJRefresh.bundle */; };
+		3998E460222F67EA002FF98D /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E431222F67E9002FF98D /* UIScrollView+MJExtension.m */; };
+		3998E461222F67EA002FF98D /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E434222F67E9002FF98D /* NSBundle+MJRefresh.m */; };
+		3998E462222F67EA002FF98D /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E435222F67E9002FF98D /* UIView+MJExtension.m */; };
+		3998E463222F67EA002FF98D /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E43C222F67E9002FF98D /* MJRefreshBackGifFooter.m */; };
+		3998E464222F67EA002FF98D /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E43D222F67E9002FF98D /* MJRefreshBackStateFooter.m */; };
+		3998E465222F67EA002FF98D /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E43E222F67E9002FF98D /* MJRefreshBackNormalFooter.m */; };
+		3998E466222F67EA002FF98D /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E443222F67E9002FF98D /* MJRefreshAutoStateFooter.m */; };
+		3998E467222F67EA002FF98D /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E444222F67E9002FF98D /* MJRefreshAutoGifFooter.m */; };
+		3998E468222F67EA002FF98D /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E445222F67E9002FF98D /* MJRefreshAutoNormalFooter.m */; };
+		3998E469222F67EA002FF98D /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E447222F67EA002FF98D /* MJRefreshNormalHeader.m */; };
+		3998E46A222F67EA002FF98D /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E44B222F67EA002FF98D /* MJRefreshStateHeader.m */; };
+		3998E46B222F67EA002FF98D /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E44C222F67EA002FF98D /* MJRefreshGifHeader.m */; };
+		3998E46C222F67EA002FF98D /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E44E222F67EA002FF98D /* MJRefreshFooter.m */; };
+		3998E46D222F67EA002FF98D /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E450222F67EA002FF98D /* MJRefreshHeader.m */; };
+		3998E46E222F67EA002FF98D /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E452222F67EA002FF98D /* MJRefreshBackFooter.m */; };
+		3998E46F222F67EA002FF98D /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E453222F67EA002FF98D /* MJRefreshAutoFooter.m */; };
+		3998E470222F67EA002FF98D /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998E455222F67EA002FF98D /* MJRefreshComponent.m */; };
+		3998E471222F67EA002FF98D /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E459222F67EA002FF98D /* ImageHelper.swift */; };
+		3998E472222F67EA002FF98D /* ZYCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E45A222F67EA002FF98D /* ZYCircleProgress.swift */; };
+		3998E476222F69B7002FF98D /* ZYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E475222F69B7002FF98D /* ZYCycleScrollView.swift */; };
+		3998E47F222F71C5002FF98D /* ZYTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E47E222F71C5002FF98D /* ZYTheme.swift */; };
+		3998E485222F71D0002FF98D /* ZYConstHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E483222F71D0002FF98D /* ZYConstHeader.swift */; };
+		3998E489222F7297002FF98D /* ZYBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E488222F7297002FF98D /* ZYBaseController.swift */; };
+		3998E48D222F746C002FF98D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3998E48C222F746B002FF98D /* UIKit.framework */; };
+		3998E491222F78E7002FF98D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3998E490222F78E7002FF98D /* MBProgressHUD.framework */; };
+		3998E499222F8F88002FF98D /* UIColor+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E492222F8F88002FF98D /* UIColor+ZYCategory.swift */; };
+		3998E49A222F8F88002FF98D /* UIButton+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E493222F8F88002FF98D /* UIButton+ZYCategory.swift */; };
+		3998E49B222F8F88002FF98D /* NSObject+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E494222F8F88002FF98D /* NSObject+ZYCategory.swift */; };
+		3998E49C222F8F88002FF98D /* UIView+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E495222F8F88002FF98D /* UIView+ZYCategory.swift */; };
+		3998E49D222F8F88002FF98D /* NSString+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E496222F8F88002FF98D /* NSString+ZYCategory.swift */; };
+		3998E49E222F8F88002FF98D /* UIImage+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E497222F8F88002FF98D /* UIImage+ZYCategory.swift */; };
+		3998E49F222F8F88002FF98D /* UIImageView+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E498222F8F88002FF98D /* UIImageView+ZYCategory.swift */; };
+		3998E4A1222F91E3002FF98D /* ZYDefineConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4A0222F91E3002FF98D /* ZYDefineConstants.swift */; };
+		3998E4A4222FAFFE002FF98D /* ZYSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4A3222FAFFE002FF98D /* ZYSystem.swift */; };
+		3998E4A6222FB8C5002FF98D /* ZYHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4A5222FB8C5002FF98D /* ZYHomeController.swift */; };
+		3998E4A8222FB8F5002FF98D /* ZYProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4A7222FB8F5002FF98D /* ZYProfileController.swift */; };
+		3998E4AA222FB959002FF98D /* ZYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4A9222FB959002FF98D /* ZYNavigationController.swift */; };
+		3998E4AC222FBA46002FF98D /* ZYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4AB222FBA46002FF98D /* ZYTabBarController.swift */; };
+		3998E4B0222FBB44002FF98D /* ZYTabBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4AF222FBB44002FF98D /* ZYTabBarContentView.swift */; };
+		3998E4B2222FCA5F002FF98D /* ZYtestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4B1222FCA5F002FF98D /* ZYtestController.swift */; };
+		B3ED9329A6B642482761E3BF /* Pods_ZYAPPFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEB26DD7B624C4FA70D878 /* Pods_ZYAPPFrameworkTests.framework */; };
+		E2F905229C9FAC9933F572D6 /* Pods_ZYAPPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353BD8B49AF6D50681FB701F /* Pods_ZYAPPFramework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3998E3F2222F5D47002FF98D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3998E3D5222F5D44002FF98D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3998E3DC222F5D44002FF98D;
+			remoteInfo = ZYAPPFramework;
+		};
+		3998E3FD222F5D47002FF98D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3998E3D5222F5D44002FF98D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3998E3DC222F5D44002FF98D;
+			remoteInfo = ZYAPPFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		353BD8B49AF6D50681FB701F /* Pods_ZYAPPFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAPPFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E3DD222F5D44002FF98D /* ZYAPPFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAPPFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3998E3E0222F5D44002FF98D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3998E3E5222F5D44002FF98D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3998E3E7222F5D46002FF98D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3998E3EA222F5D46002FF98D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3998E3EC222F5D46002FF98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3998E3F1222F5D47002FF98D /* ZYAPPFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYAPPFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3998E3F5222F5D47002FF98D /* ZYAPPFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYAPPFrameworkTests.swift; sourceTree = "<group>"; };
+		3998E3F7222F5D47002FF98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3998E3FC222F5D47002FF98D /* ZYAPPFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYAPPFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3998E400222F5D47002FF98D /* ZYAPPFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYAPPFrameworkUITests.swift; sourceTree = "<group>"; };
+		3998E402222F5D47002FF98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3998E424222F67E9002FF98D /* MDHTMLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDHTMLLabel.m; sourceTree = "<group>"; };
+		3998E425222F67E9002FF98D /* MDHTMLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDHTMLLabel.h; sourceTree = "<group>"; };
+		3998E42A222F67E9002FF98D /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		3998E42B222F67E9002FF98D /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		3998E42C222F67E9002FF98D /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		3998E42D222F67E9002FF98D /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		3998E42E222F67E9002FF98D /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		3998E42F222F67E9002FF98D /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		3998E430222F67E9002FF98D /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		3998E431222F67E9002FF98D /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		3998E432222F67E9002FF98D /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		3998E433222F67E9002FF98D /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		3998E434222F67E9002FF98D /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		3998E435222F67E9002FF98D /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		3998E439222F67E9002FF98D /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		3998E43A222F67E9002FF98D /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		3998E43B222F67E9002FF98D /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		3998E43C222F67E9002FF98D /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		3998E43D222F67E9002FF98D /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		3998E43E222F67E9002FF98D /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		3998E440222F67E9002FF98D /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		3998E441222F67E9002FF98D /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		3998E442222F67E9002FF98D /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		3998E443222F67E9002FF98D /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		3998E444222F67E9002FF98D /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		3998E445222F67E9002FF98D /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		3998E447222F67EA002FF98D /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		3998E448222F67EA002FF98D /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		3998E449222F67EA002FF98D /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		3998E44A222F67EA002FF98D /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		3998E44B222F67EA002FF98D /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		3998E44C222F67EA002FF98D /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		3998E44E222F67EA002FF98D /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		3998E44F222F67EA002FF98D /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		3998E450222F67EA002FF98D /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		3998E451222F67EA002FF98D /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		3998E452222F67EA002FF98D /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		3998E453222F67EA002FF98D /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		3998E454222F67EA002FF98D /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		3998E455222F67EA002FF98D /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		3998E456222F67EA002FF98D /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		3998E457222F67EA002FF98D /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		3998E459222F67EA002FF98D /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		3998E45A222F67EA002FF98D /* ZYCircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCircleProgress.swift; sourceTree = "<group>"; };
+		3998E475222F69B7002FF98D /* ZYCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollView.swift; sourceTree = "<group>"; };
+		3998E47E222F71C5002FF98D /* ZYTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYTheme.swift; sourceTree = "<group>"; };
+		3998E482222F71D0002FF98D /* ZYObjc_Briding_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYObjc_Briding_Header.h; sourceTree = "<group>"; };
+		3998E483222F71D0002FF98D /* ZYConstHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYConstHeader.swift; sourceTree = "<group>"; };
+		3998E488222F7297002FF98D /* ZYBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYBaseController.swift; sourceTree = "<group>"; };
+		3998E48A222F73BC002FF98D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3998E48C222F746B002FF98D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3998E490222F78E7002FF98D /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3998E492222F8F88002FF98D /* UIColor+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E493222F8F88002FF98D /* UIButton+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E494222F8F88002FF98D /* NSObject+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E495222F8F88002FF98D /* UIView+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E496222F8F88002FF98D /* NSString+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E497222F8F88002FF98D /* UIImage+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E498222F8F88002FF98D /* UIImageView+ZYCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ZYCategory.swift"; sourceTree = "<group>"; };
+		3998E4A0222F91E3002FF98D /* ZYDefineConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYDefineConstants.swift; sourceTree = "<group>"; };
+		3998E4A3222FAFFE002FF98D /* ZYSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYSystem.swift; sourceTree = "<group>"; };
+		3998E4A5222FB8C5002FF98D /* ZYHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYHomeController.swift; sourceTree = "<group>"; };
+		3998E4A7222FB8F5002FF98D /* ZYProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYProfileController.swift; sourceTree = "<group>"; };
+		3998E4A9222FB959002FF98D /* ZYNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYNavigationController.swift; sourceTree = "<group>"; };
+		3998E4AB222FBA46002FF98D /* ZYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTabBarController.swift; sourceTree = "<group>"; };
+		3998E4AF222FBB44002FF98D /* ZYTabBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTabBarContentView.swift; sourceTree = "<group>"; };
+		3998E4B1222FCA5F002FF98D /* ZYtestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYtestController.swift; sourceTree = "<group>"; };
+		42D05955F0E66FA7314DB823 /* Pods-ZYAPPFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkTests/Pods-ZYAPPFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6105783E02D62B5B8C8356F7 /* Pods-ZYAPPFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkTests/Pods-ZYAPPFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		624B86685BF196AF531E7AF4 /* Pods-ZYAPPFrameworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkUITests/Pods-ZYAPPFrameworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70E992C8A401DA101E725836 /* Pods-ZYAPPFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFramework/Pods-ZYAPPFramework.release.xcconfig"; sourceTree = "<group>"; };
+		839F38D770534A0BA5102A89 /* Pods_ZYAPPFrameworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAPPFrameworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCEB26DD7B624C4FA70D878 /* Pods_ZYAPPFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAPPFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4326A58A51EB65612F98396 /* Pods-ZYAPPFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFramework/Pods-ZYAPPFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5AF4A372C848FA49716874 /* Pods-ZYAPPFrameworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkUITests/Pods-ZYAPPFrameworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3998E3DA222F5D44002FF98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998E491222F78E7002FF98D /* MBProgressHUD.framework in Frameworks */,
+				3998E48D222F746C002FF98D /* UIKit.framework in Frameworks */,
+				E2F905229C9FAC9933F572D6 /* Pods_ZYAPPFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3998E3EE222F5D47002FF98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3ED9329A6B642482761E3BF /* Pods_ZYAPPFrameworkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3998E3F9222F5D47002FF98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1323F2948AF232F8E4E67125 /* Pods_ZYAPPFrameworkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3998E3D4222F5D44002FF98D = {
+			isa = PBXGroup;
+			children = (
+				3998E3DF222F5D44002FF98D /* ZYAPPFramework */,
+				3998E3F4222F5D47002FF98D /* ZYAPPFrameworkTests */,
+				3998E3FF222F5D47002FF98D /* ZYAPPFrameworkUITests */,
+				3998E3DE222F5D44002FF98D /* Products */,
+				8A9370905B432FF0AF6561CE /* Pods */,
+				50743F51A1B013AF0B2984EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3998E3DE222F5D44002FF98D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3998E3DD222F5D44002FF98D /* ZYAPPFramework.app */,
+				3998E3F1222F5D47002FF98D /* ZYAPPFrameworkTests.xctest */,
+				3998E3FC222F5D47002FF98D /* ZYAPPFrameworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3998E3DF222F5D44002FF98D /* ZYAPPFramework */ = {
+			isa = PBXGroup;
+			children = (
+				3998E480222F71D0002FF98D /* Header */,
+				3998E40F222F6223002FF98D /* Tools */,
+				3998E410222F6235002FF98D /* AppDelegate */,
+				3998E40E222F6207002FF98D /* Main */,
+				3998E411222F6251002FF98D /* Home */,
+				3998E413222F626B002FF98D /* Profile */,
+				3998E41F222F64A3002FF98D /* Common */,
+				3998E41B222F6453002FF98D /* Network */,
+				3998E41C222F6473002FF98D /* Database */,
+				3998E41D222F6481002FF98D /* Category */,
+				3998E420222F64CC002FF98D /* Vendor */,
+				3998E421222F64FA002FF98D /* Resource */,
+				3998E3E4222F5D44002FF98D /* Main.storyboard */,
+				3998E3E7222F5D46002FF98D /* Assets.xcassets */,
+				3998E3E9222F5D46002FF98D /* LaunchScreen.storyboard */,
+				3998E3EC222F5D46002FF98D /* Info.plist */,
+			);
+			path = ZYAPPFramework;
+			sourceTree = "<group>";
+		};
+		3998E3F4222F5D47002FF98D /* ZYAPPFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3998E3F5222F5D47002FF98D /* ZYAPPFrameworkTests.swift */,
+				3998E3F7222F5D47002FF98D /* Info.plist */,
+			);
+			path = ZYAPPFrameworkTests;
+			sourceTree = "<group>";
+		};
+		3998E3FF222F5D47002FF98D /* ZYAPPFrameworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3998E400222F5D47002FF98D /* ZYAPPFrameworkUITests.swift */,
+				3998E402222F5D47002FF98D /* Info.plist */,
+			);
+			path = ZYAPPFrameworkUITests;
+			sourceTree = "<group>";
+		};
+		3998E40E222F6207002FF98D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3998E4AD222FBB17002FF98D /* Controller */,
+				3998E4AE222FBB17002FF98D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3998E40F222F6223002FF98D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3998E47E222F71C5002FF98D /* ZYTheme.swift */,
+				3998E4A3222FAFFE002FF98D /* ZYSystem.swift */,
+				3998E4A0222F91E3002FF98D /* ZYDefineConstants.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3998E410222F6235002FF98D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3998E3E0222F5D44002FF98D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3998E411222F6251002FF98D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3998E412222F6259002FF98D /* Home */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3998E412222F6259002FF98D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3998E419222F6295002FF98D /* Controller */,
+				3998E41A222F6295002FF98D /* Model */,
+				3998E418222F6295002FF98D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3998E413222F626B002FF98D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3998E414222F6273002FF98D /* Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3998E414222F6273002FF98D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3998E416222F628B002FF98D /* Controller */,
+				3998E417222F628B002FF98D /* Model */,
+				3998E415222F628B002FF98D /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3998E415222F628B002FF98D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3998E416222F628B002FF98D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3998E4A7222FB8F5002FF98D /* ZYProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3998E417222F628B002FF98D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3998E418222F6295002FF98D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3998E419222F6295002FF98D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3998E4A5222FB8C5002FF98D /* ZYHomeController.swift */,
+				3998E4B1222FCA5F002FF98D /* ZYtestController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3998E41A222F6295002FF98D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3998E41B222F6453002FF98D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3998E41C222F6473002FF98D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3998E41D222F6481002FF98D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3998E4A2222F9896002FF98D /* ZYCategory */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3998E41F222F64A3002FF98D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3998E420222F64CC002FF98D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3998E474222F69B7002FF98D /* ZYCycleScrollView */,
+				3998E458222F67EA002FF98D /* ImageHelper */,
+				3998E423222F67E9002FF98D /* MDHTMLLabel */,
+				3998E429222F67E9002FF98D /* MJRefresh */,
+				3998E473222F6838002FF98D /* ZYCircleProgress */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		3998E421222F64FA002FF98D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3998E423222F67E9002FF98D /* MDHTMLLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3998E424222F67E9002FF98D /* MDHTMLLabel.m */,
+				3998E425222F67E9002FF98D /* MDHTMLLabel.h */,
+			);
+			path = MDHTMLLabel;
+			sourceTree = "<group>";
+		};
+		3998E429222F67E9002FF98D /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				3998E42A222F67E9002FF98D /* UIScrollView+MJRefresh.m */,
+				3998E42B222F67E9002FF98D /* MJRefreshConst.m */,
+				3998E42C222F67E9002FF98D /* UIScrollView+MJExtension.h */,
+				3998E42D222F67E9002FF98D /* MJRefresh.h */,
+				3998E42E222F67E9002FF98D /* NSBundle+MJRefresh.h */,
+				3998E42F222F67E9002FF98D /* MJRefresh.bundle */,
+				3998E430222F67E9002FF98D /* UIView+MJExtension.h */,
+				3998E431222F67E9002FF98D /* UIScrollView+MJExtension.m */,
+				3998E432222F67E9002FF98D /* MJRefreshConst.h */,
+				3998E433222F67E9002FF98D /* UIScrollView+MJRefresh.h */,
+				3998E434222F67E9002FF98D /* NSBundle+MJRefresh.m */,
+				3998E435222F67E9002FF98D /* UIView+MJExtension.m */,
+				3998E436222F67E9002FF98D /* Custom */,
+				3998E44D222F67EA002FF98D /* Base */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		3998E436222F67E9002FF98D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3998E437222F67E9002FF98D /* Footer */,
+				3998E446222F67EA002FF98D /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3998E437222F67E9002FF98D /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				3998E438222F67E9002FF98D /* Back */,
+				3998E43F222F67E9002FF98D /* Auto */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		3998E438222F67E9002FF98D /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				3998E439222F67E9002FF98D /* MJRefreshBackGifFooter.h */,
+				3998E43A222F67E9002FF98D /* MJRefreshBackStateFooter.h */,
+				3998E43B222F67E9002FF98D /* MJRefreshBackNormalFooter.h */,
+				3998E43C222F67E9002FF98D /* MJRefreshBackGifFooter.m */,
+				3998E43D222F67E9002FF98D /* MJRefreshBackStateFooter.m */,
+				3998E43E222F67E9002FF98D /* MJRefreshBackNormalFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		3998E43F222F67E9002FF98D /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				3998E440222F67E9002FF98D /* MJRefreshAutoStateFooter.h */,
+				3998E441222F67E9002FF98D /* MJRefreshAutoNormalFooter.h */,
+				3998E442222F67E9002FF98D /* MJRefreshAutoGifFooter.h */,
+				3998E443222F67E9002FF98D /* MJRefreshAutoStateFooter.m */,
+				3998E444222F67E9002FF98D /* MJRefreshAutoGifFooter.m */,
+				3998E445222F67E9002FF98D /* MJRefreshAutoNormalFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		3998E446222F67EA002FF98D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3998E447222F67EA002FF98D /* MJRefreshNormalHeader.m */,
+				3998E448222F67EA002FF98D /* MJRefreshStateHeader.h */,
+				3998E449222F67EA002FF98D /* MJRefreshGifHeader.h */,
+				3998E44A222F67EA002FF98D /* MJRefreshNormalHeader.h */,
+				3998E44B222F67EA002FF98D /* MJRefreshStateHeader.m */,
+				3998E44C222F67EA002FF98D /* MJRefreshGifHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		3998E44D222F67EA002FF98D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3998E44E222F67EA002FF98D /* MJRefreshFooter.m */,
+				3998E44F222F67EA002FF98D /* MJRefreshComponent.h */,
+				3998E450222F67EA002FF98D /* MJRefreshHeader.m */,
+				3998E451222F67EA002FF98D /* MJRefreshAutoFooter.h */,
+				3998E452222F67EA002FF98D /* MJRefreshBackFooter.m */,
+				3998E453222F67EA002FF98D /* MJRefreshAutoFooter.m */,
+				3998E454222F67EA002FF98D /* MJRefreshHeader.h */,
+				3998E455222F67EA002FF98D /* MJRefreshComponent.m */,
+				3998E456222F67EA002FF98D /* MJRefreshFooter.h */,
+				3998E457222F67EA002FF98D /* MJRefreshBackFooter.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3998E458222F67EA002FF98D /* ImageHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3998E459222F67EA002FF98D /* ImageHelper.swift */,
+			);
+			path = ImageHelper;
+			sourceTree = "<group>";
+		};
+		3998E473222F6838002FF98D /* ZYCircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3998E45A222F67EA002FF98D /* ZYCircleProgress.swift */,
+			);
+			path = ZYCircleProgress;
+			sourceTree = "<group>";
+		};
+		3998E474222F69B7002FF98D /* ZYCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3998E475222F69B7002FF98D /* ZYCycleScrollView.swift */,
+			);
+			path = ZYCycleScrollView;
+			sourceTree = "<group>";
+		};
+		3998E480222F71D0002FF98D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3998E482222F71D0002FF98D /* ZYObjc_Briding_Header.h */,
+				3998E483222F71D0002FF98D /* ZYConstHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		3998E4A2222F9896002FF98D /* ZYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3998E494222F8F88002FF98D /* NSObject+ZYCategory.swift */,
+				3998E496222F8F88002FF98D /* NSString+ZYCategory.swift */,
+				3998E493222F8F88002FF98D /* UIButton+ZYCategory.swift */,
+				3998E492222F8F88002FF98D /* UIColor+ZYCategory.swift */,
+				3998E497222F8F88002FF98D /* UIImage+ZYCategory.swift */,
+				3998E498222F8F88002FF98D /* UIImageView+ZYCategory.swift */,
+				3998E495222F8F88002FF98D /* UIView+ZYCategory.swift */,
+				391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */,
+			);
+			path = ZYCategory;
+			sourceTree = "<group>";
+		};
+		3998E4AD222FBB17002FF98D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3998E4A9222FB959002FF98D /* ZYNavigationController.swift */,
+				3998E4AB222FBA46002FF98D /* ZYTabBarController.swift */,
+				3998E488222F7297002FF98D /* ZYBaseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3998E4AE222FBB17002FF98D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3998E4AF222FBB44002FF98D /* ZYTabBarContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50743F51A1B013AF0B2984EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3998E490222F78E7002FF98D /* MBProgressHUD.framework */,
+				3998E48C222F746B002FF98D /* UIKit.framework */,
+				3998E48A222F73BC002FF98D /* SnapKit.framework */,
+				353BD8B49AF6D50681FB701F /* Pods_ZYAPPFramework.framework */,
+				9FCEB26DD7B624C4FA70D878 /* Pods_ZYAPPFrameworkTests.framework */,
+				839F38D770534A0BA5102A89 /* Pods_ZYAPPFrameworkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A9370905B432FF0AF6561CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4326A58A51EB65612F98396 /* Pods-ZYAPPFramework.debug.xcconfig */,
+				70E992C8A401DA101E725836 /* Pods-ZYAPPFramework.release.xcconfig */,
+				42D05955F0E66FA7314DB823 /* Pods-ZYAPPFrameworkTests.debug.xcconfig */,
+				6105783E02D62B5B8C8356F7 /* Pods-ZYAPPFrameworkTests.release.xcconfig */,
+				ED5AF4A372C848FA49716874 /* Pods-ZYAPPFrameworkUITests.debug.xcconfig */,
+				624B86685BF196AF531E7AF4 /* Pods-ZYAPPFrameworkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3998E3DC222F5D44002FF98D /* ZYAPPFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3998E405222F5D47002FF98D /* Build configuration list for PBXNativeTarget "ZYAPPFramework" */;
+			buildPhases = (
+				838204B39A5B4BB27EB9667A /* [CP] Check Pods Manifest.lock */,
+				3998E3D9222F5D44002FF98D /* Sources */,
+				3998E3DA222F5D44002FF98D /* Frameworks */,
+				3998E3DB222F5D44002FF98D /* Resources */,
+				E8996978FE1D6FC6E531B4E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYAPPFramework;
+			productName = ZYAPPFramework;
+			productReference = 3998E3DD222F5D44002FF98D /* ZYAPPFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3998E3F0222F5D47002FF98D /* ZYAPPFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3998E408222F5D47002FF98D /* Build configuration list for PBXNativeTarget "ZYAPPFrameworkTests" */;
+			buildPhases = (
+				E777C92C006E9EB747691809 /* [CP] Check Pods Manifest.lock */,
+				3998E3ED222F5D47002FF98D /* Sources */,
+				3998E3EE222F5D47002FF98D /* Frameworks */,
+				3998E3EF222F5D47002FF98D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3998E3F3222F5D47002FF98D /* PBXTargetDependency */,
+			);
+			name = ZYAPPFrameworkTests;
+			productName = ZYAPPFrameworkTests;
+			productReference = 3998E3F1222F5D47002FF98D /* ZYAPPFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3998E3FB222F5D47002FF98D /* ZYAPPFrameworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3998E40B222F5D47002FF98D /* Build configuration list for PBXNativeTarget "ZYAPPFrameworkUITests" */;
+			buildPhases = (
+				4196D38B1AC3F8D39A57A885 /* [CP] Check Pods Manifest.lock */,
+				3998E3F8222F5D47002FF98D /* Sources */,
+				3998E3F9222F5D47002FF98D /* Frameworks */,
+				3998E3FA222F5D47002FF98D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3998E3FE222F5D47002FF98D /* PBXTargetDependency */,
+			);
+			name = ZYAPPFrameworkUITests;
+			productName = ZYAPPFrameworkUITests;
+			productReference = 3998E3FC222F5D47002FF98D /* ZYAPPFrameworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3998E3D5222F5D44002FF98D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZY;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "石志愿";
+				TargetAttributes = {
+					3998E3DC222F5D44002FF98D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3998E3F0222F5D47002FF98D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3998E3DC222F5D44002FF98D;
+					};
+					3998E3FB222F5D47002FF98D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3998E3DC222F5D44002FF98D;
+					};
+				};
+			};
+			buildConfigurationList = 3998E3D8222F5D44002FF98D /* Build configuration list for PBXProject "ZYAPPFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3998E3D4222F5D44002FF98D;
+			productRefGroup = 3998E3DE222F5D44002FF98D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3998E3DC222F5D44002FF98D /* ZYAPPFramework */,
+				3998E3F0222F5D47002FF98D /* ZYAPPFrameworkTests */,
+				3998E3FB222F5D47002FF98D /* ZYAPPFrameworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3998E3DB222F5D44002FF98D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998E3EB222F5D46002FF98D /* LaunchScreen.storyboard in Resources */,
+				3998E3E8222F5D46002FF98D /* Assets.xcassets in Resources */,
+				3998E45F222F67EA002FF98D /* MJRefresh.bundle in Resources */,
+				3998E3E6222F5D44002FF98D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3998E3EF222F5D47002FF98D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3998E3FA222F5D47002FF98D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4196D38B1AC3F8D39A57A885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYAPPFrameworkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		838204B39A5B4BB27EB9667A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYAPPFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E777C92C006E9EB747691809 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYAPPFrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8996978FE1D6FC6E531B4E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZYAPPFramework/Pods-ZYAPPFramework-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SHFullscreenPopGestureSwift/SHFullscreenPopGestureSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SHFullscreenPopGestureSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDBSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYAPPFramework/Pods-ZYAPPFramework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3998E3D9222F5D44002FF98D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998E46B222F67EA002FF98D /* MJRefreshGifHeader.m in Sources */,
+				3998E46F222F67EA002FF98D /* MJRefreshAutoFooter.m in Sources */,
+				3998E472222F67EA002FF98D /* ZYCircleProgress.swift in Sources */,
+				3998E49C222F8F88002FF98D /* UIView+ZYCategory.swift in Sources */,
+				3998E460222F67EA002FF98D /* UIScrollView+MJExtension.m in Sources */,
+				3998E46A222F67EA002FF98D /* MJRefreshStateHeader.m in Sources */,
+				3998E4B0222FBB44002FF98D /* ZYTabBarContentView.swift in Sources */,
+				3998E49B222F8F88002FF98D /* NSObject+ZYCategory.swift in Sources */,
+				3998E461222F67EA002FF98D /* NSBundle+MJRefresh.m in Sources */,
+				3998E4A8222FB8F5002FF98D /* ZYProfileController.swift in Sources */,
+				3998E49F222F8F88002FF98D /* UIImageView+ZYCategory.swift in Sources */,
+				3998E45D222F67EA002FF98D /* UIScrollView+MJRefresh.m in Sources */,
+				3998E4B2222FCA5F002FF98D /* ZYtestController.swift in Sources */,
+				3998E470222F67EA002FF98D /* MJRefreshComponent.m in Sources */,
+				3998E4A1222F91E3002FF98D /* ZYDefineConstants.swift in Sources */,
+				3998E46C222F67EA002FF98D /* MJRefreshFooter.m in Sources */,
+				3998E4A4222FAFFE002FF98D /* ZYSystem.swift in Sources */,
+				3998E465222F67EA002FF98D /* MJRefreshBackNormalFooter.m in Sources */,
+				3998E467222F67EA002FF98D /* MJRefreshAutoGifFooter.m in Sources */,
+				3998E468222F67EA002FF98D /* MJRefreshAutoNormalFooter.m in Sources */,
+				3998E4AA222FB959002FF98D /* ZYNavigationController.swift in Sources */,
+				3998E469222F67EA002FF98D /* MJRefreshNormalHeader.m in Sources */,
+				3998E49E222F8F88002FF98D /* UIImage+ZYCategory.swift in Sources */,
+				3998E476222F69B7002FF98D /* ZYCycleScrollView.swift in Sources */,
+				3998E463222F67EA002FF98D /* MJRefreshBackGifFooter.m in Sources */,
+				3998E471222F67EA002FF98D /* ImageHelper.swift in Sources */,
+				3998E4A6222FB8C5002FF98D /* ZYHomeController.swift in Sources */,
+				3998E45B222F67EA002FF98D /* MDHTMLLabel.m in Sources */,
+				3998E49D222F8F88002FF98D /* NSString+ZYCategory.swift in Sources */,
+				3998E464222F67EA002FF98D /* MJRefreshBackStateFooter.m in Sources */,
+				3998E489222F7297002FF98D /* ZYBaseController.swift in Sources */,
+				3998E466222F67EA002FF98D /* MJRefreshAutoStateFooter.m in Sources */,
+				3998E485222F71D0002FF98D /* ZYConstHeader.swift in Sources */,
+				3998E46D222F67EA002FF98D /* MJRefreshHeader.m in Sources */,
+				3998E3E1222F5D44002FF98D /* AppDelegate.swift in Sources */,
+				3998E499222F8F88002FF98D /* UIColor+ZYCategory.swift in Sources */,
+				3998E45E222F67EA002FF98D /* MJRefreshConst.m in Sources */,
+				3998E46E222F67EA002FF98D /* MJRefreshBackFooter.m in Sources */,
+				3998E49A222F8F88002FF98D /* UIButton+ZYCategory.swift in Sources */,
+				391C1B9022366C3B0044ECAF /* UINavigationBar+ZYCategory.swift in Sources */,
+				3998E47F222F71C5002FF98D /* ZYTheme.swift in Sources */,
+				3998E4AC222FBA46002FF98D /* ZYTabBarController.swift in Sources */,
+				3998E462222F67EA002FF98D /* UIView+MJExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3998E3ED222F5D47002FF98D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998E3F6222F5D47002FF98D /* ZYAPPFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3998E3F8222F5D47002FF98D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3998E401222F5D47002FF98D /* ZYAPPFrameworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3998E3F3222F5D47002FF98D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3998E3DC222F5D44002FF98D /* ZYAPPFramework */;
+			targetProxy = 3998E3F2222F5D47002FF98D /* PBXContainerItemProxy */;
+		};
+		3998E3FE222F5D47002FF98D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3998E3DC222F5D44002FF98D /* ZYAPPFramework */;
+			targetProxy = 3998E3FD222F5D47002FF98D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3998E3E4222F5D44002FF98D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3998E3E5222F5D44002FF98D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3998E3E9222F5D46002FF98D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3998E3EA222F5D46002FF98D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3998E403222F5D47002FF98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3998E404222F5D47002FF98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3998E406222F5D47002FF98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4326A58A51EB65612F98396 /* Pods-ZYAPPFramework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25PVKJ68JW;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZYAPPFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.ZYAPPFramework-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ZYAPPFramework/Header/ZYObjc_Briding_Header.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		3998E407222F5D47002FF98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E992C8A401DA101E725836 /* Pods-ZYAPPFramework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25PVKJ68JW;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZYAPPFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.ZYAPPFramework-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ZYAPPFramework/Header/ZYObjc_Briding_Header.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+		3998E409222F5D47002FF98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42D05955F0E66FA7314DB823 /* Pods-ZYAPPFrameworkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYAPPFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fu.ZYAPPFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYAPPFramework.app/ZYAPPFramework";
+			};
+			name = Debug;
+		};
+		3998E40A222F5D47002FF98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6105783E02D62B5B8C8356F7 /* Pods-ZYAPPFrameworkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYAPPFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fu.ZYAPPFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYAPPFramework.app/ZYAPPFramework";
+			};
+			name = Release;
+		};
+		3998E40C222F5D47002FF98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5AF4A372C848FA49716874 /* Pods-ZYAPPFrameworkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYAPPFrameworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fu.ZYAPPFrameworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYAPPFramework;
+			};
+			name = Debug;
+		};
+		3998E40D222F5D47002FF98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624B86685BF196AF531E7AF4 /* Pods-ZYAPPFrameworkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYAPPFrameworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fu.ZYAPPFrameworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYAPPFramework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3998E3D8222F5D44002FF98D /* Build configuration list for PBXProject "ZYAPPFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3998E403222F5D47002FF98D /* Debug */,
+				3998E404222F5D47002FF98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3998E405222F5D47002FF98D /* Build configuration list for PBXNativeTarget "ZYAPPFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3998E406222F5D47002FF98D /* Debug */,
+				3998E407222F5D47002FF98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3998E408222F5D47002FF98D /* Build configuration list for PBXNativeTarget "ZYAPPFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3998E409222F5D47002FF98D /* Debug */,
+				3998E40A222F5D47002FF98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3998E40B222F5D47002FF98D /* Build configuration list for PBXNativeTarget "ZYAPPFrameworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3998E40C222F5D47002FF98D /* Debug */,
+				3998E40D222F5D47002FF98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3998E3D5222F5D44002FF98D /* Project object */;
+}

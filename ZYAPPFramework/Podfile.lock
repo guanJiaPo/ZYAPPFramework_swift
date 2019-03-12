@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (4.7.3)
+  - ESTabBarController-swift (2.6.2)
+  - HandyJSON (4.2.0)
+  - KeychainAccess (3.1.2)
+  - Kingfisher (4.10.0)
+  - MBProgressHUD (1.1.0)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - SHFullscreenPopGestureSwift (1.2.1)
+  - SnapKit (4.0.1)
+  - SQLiteRepairKit (1.2.1):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SwiftyUserDefaults (4.0.0-alpha.1)
+  - Toucan (1.0.0)
+  - WCDB.swift (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESTabBarController-swift
+  - HandyJSON
+  - KeychainAccess
+  - Kingfisher
+  - MBProgressHUD
+  - NVActivityIndicatorView
+  - SHFullscreenPopGestureSwift
+  - SnapKit (~> 4.0.0)
+  - SwiftyUserDefaults (= 4.0.0-alpha.1)
+  - Toucan
+  - WCDB.swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ESTabBarController-swift
+    - HandyJSON
+    - KeychainAccess
+    - Kingfisher
+    - MBProgressHUD
+    - NVActivityIndicatorView
+    - SHFullscreenPopGestureSwift
+    - SnapKit
+    - SQLiteRepairKit
+    - SwiftyUserDefaults
+    - Toucan
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  ESTabBarController-swift: f0a8679e43df1e60b7b36bbcaf1dc98ba6273c7d
+  HandyJSON: 9dfc026c7d7adc1f0f8ba8b181495f0e0763b0f4
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  SHFullscreenPopGestureSwift: 96c20749695c8fbf14a29feb5ece469d7a909a41
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SQLiteRepairKit: 4d21bab9eff6a273f63da6815a0d1659e53f5bde
+  SwiftyUserDefaults: cebe0ff9472f52699772a514b6f7155861d8069b
+  Toucan: 61867fb10948c02e9804280a95eb183e98eac97a
+  WCDB.swift: 87aee41f5ca3aded9c6f9b68b0ef3e88918a5ee2
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+
+PODFILE CHECKSUM: ebda426bd5bc2d41ccf5f1c113f77d9cd763c744
+
+COCOAPODS: 1.5.3
