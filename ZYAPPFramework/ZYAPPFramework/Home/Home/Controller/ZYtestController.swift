@@ -15,17 +15,34 @@ class ZYtestController: ZYBaseController {
 
         view.backgroundColor = UIColor.red
         title = "push"
+        
+        let textField = UITextField(frame: CGRect(x: 15, y: 100, width: ZYTheme.screenWidth - 30, height: 30))
+        textField.backgroundColor = UIColor.gray
+        textField.delegate = self
+        self.view.addSubview(textField)
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+}
+
+extension ZYtestController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string == "" || string == "\n" {
+            return true
+        }
+        
+        return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let text = textField.text {
+            print(text.checkNumOrLetStrForN(n: 6, to: 11))
+            print(text.pinYin(), text.firstLetter())
+            if text.count > 5 {
+                print(text.zy_subString(rang: NSRange(location: 1, length: 3)))
+            }
+        }
     }
-    */
-
 }
