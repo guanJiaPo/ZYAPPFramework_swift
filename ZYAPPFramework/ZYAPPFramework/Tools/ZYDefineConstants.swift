@@ -46,3 +46,19 @@ func kFont(size: CGFloat, weight: UIFont.Weight) -> UIFont {
 func kBoldFont(size: CGFloat) -> UIFont {
     return UIFont.boldSystemFont(ofSize: size)
 }
+
+
+/* DEBUG Print
+ *
+ * message: 打印消息
+ * file: 打印所属类
+ * lineNumber: 打印语句所在行数
+ */
+func ZYPrint(_ items: Any...) {
+    #if DEBUG
+    let file = #file
+    let fileName = (file as NSString).lastPathComponent
+    print("[\(fileName): \(#line)]- ",items)
+    
+    #endif
+}

@@ -43,7 +43,7 @@ struct ZYTheme {
     
     //MARK: 导航栏总高度（状态栏 + 导航栏）
     static var navTotalHeight: CGFloat {
-        return UIScreen.main.bounds.size.width
+        return statusBarHeight + navBarHeight
     }
     
     //MARK: 屏幕安全区边距

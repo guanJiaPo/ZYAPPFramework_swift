@@ -59,6 +59,7 @@
 		3998E4AC222FBA46002FF98D /* ZYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4AB222FBA46002FF98D /* ZYTabBarController.swift */; };
 		3998E4B0222FBB44002FF98D /* ZYTabBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4AF222FBB44002FF98D /* ZYTabBarContentView.swift */; };
 		3998E4B2222FCA5F002FF98D /* ZYtestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E4B1222FCA5F002FF98D /* ZYtestController.swift */; };
+		39CDEFDD226482BA00CDD393 /* ZYNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CDEFDC226482BA00CDD393 /* ZYNetworkManager.swift */; };
 		B3ED9329A6B642482761E3BF /* Pods_ZYAPPFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEB26DD7B624C4FA70D878 /* Pods_ZYAPPFrameworkTests.framework */; };
 		E2F905229C9FAC9933F572D6 /* Pods_ZYAPPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353BD8B49AF6D50681FB701F /* Pods_ZYAPPFramework.framework */; };
 /* End PBXBuildFile section */
@@ -162,6 +163,7 @@
 		3998E4AB222FBA46002FF98D /* ZYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTabBarController.swift; sourceTree = "<group>"; };
 		3998E4AF222FBB44002FF98D /* ZYTabBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTabBarContentView.swift; sourceTree = "<group>"; };
 		3998E4B1222FCA5F002FF98D /* ZYtestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYtestController.swift; sourceTree = "<group>"; };
+		39CDEFDC226482BA00CDD393 /* ZYNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYNetworkManager.swift; sourceTree = "<group>"; };
 		42D05955F0E66FA7314DB823 /* Pods-ZYAPPFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkTests/Pods-ZYAPPFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6105783E02D62B5B8C8356F7 /* Pods-ZYAPPFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkTests/Pods-ZYAPPFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		624B86685BF196AF531E7AF4 /* Pods-ZYAPPFrameworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAPPFrameworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYAPPFrameworkUITests/Pods-ZYAPPFrameworkUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 		3998E41B222F6453002FF98D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				39CDEFDC226482BA00CDD393 /* ZYNetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -884,6 +887,7 @@
 				3998E49F222F8F88002FF98D /* UIImageView+ZYCategory.swift in Sources */,
 				3998E45D222F67EA002FF98D /* UIScrollView+MJRefresh.m in Sources */,
 				3998E4B2222FCA5F002FF98D /* ZYtestController.swift in Sources */,
+				39CDEFDD226482BA00CDD393 /* ZYNetworkManager.swift in Sources */,
 				3998E470222F67EA002FF98D /* MJRefreshComponent.m in Sources */,
 				3998E4A1222F91E3002FF98D /* ZYDefineConstants.swift in Sources */,
 				3998E46C222F67EA002FF98D /* MJRefreshFooter.m in Sources */,
