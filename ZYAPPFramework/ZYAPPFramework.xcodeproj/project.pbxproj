@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1323F2948AF232F8E4E67125 /* Pods_ZYAPPFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839F38D770534A0BA5102A89 /* Pods_ZYAPPFrameworkUITests.framework */; };
 		391C1B9022366C3B0044ECAF /* UINavigationBar+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */; };
+		395AE1D2226DBE5100C6EA29 /* ZYAlertBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395AE1D1226DBE5100C6EA29 /* ZYAlertBaseView.swift */; };
 		3998E3E1222F5D44002FF98D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E3E0222F5D44002FF98D /* AppDelegate.swift */; };
 		3998E3E6222F5D44002FF98D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E4222F5D44002FF98D /* Main.storyboard */; };
 		3998E3E8222F5D46002FF98D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E7222F5D46002FF98D /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 /* Begin PBXFileReference section */
 		353BD8B49AF6D50681FB701F /* Pods_ZYAPPFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAPPFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ZYCategory.swift"; sourceTree = "<group>"; };
+		395AE1D1226DBE5100C6EA29 /* ZYAlertBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYAlertBaseView.swift; sourceTree = "<group>"; };
 		3998E3DD222F5D44002FF98D /* ZYAPPFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAPPFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3998E3E0222F5D44002FF98D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3998E3E5222F5D44002FF98D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +206,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		395AE1D0226DBE3C00C6EA29 /* ZYAlertBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				395AE1D1226DBE5100C6EA29 /* ZYAlertBaseView.swift */,
+			);
+			path = ZYAlertBaseView;
+			sourceTree = "<group>";
+		};
 		3998E3D4222F5D44002FF98D = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +418,7 @@
 		3998E420222F64CC002FF98D /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				395AE1D0226DBE3C00C6EA29 /* ZYAlertBaseView */,
 				3998E474222F69B7002FF98D /* ZYCycleScrollView */,
 				3998E458222F67EA002FF98D /* ImageHelper */,
 				3998E423222F67E9002FF98D /* MDHTMLLabel */,
@@ -892,6 +903,7 @@
 				3998E4A1222F91E3002FF98D /* ZYDefineConstants.swift in Sources */,
 				3998E46C222F67EA002FF98D /* MJRefreshFooter.m in Sources */,
 				3998E4A4222FAFFE002FF98D /* ZYSystem.swift in Sources */,
+				395AE1D2226DBE5100C6EA29 /* ZYAlertBaseView.swift in Sources */,
 				3998E465222F67EA002FF98D /* MJRefreshBackNormalFooter.m in Sources */,
 				3998E467222F67EA002FF98D /* MJRefreshAutoGifFooter.m in Sources */,
 				3998E468222F67EA002FF98D /* MJRefreshAutoNormalFooter.m in Sources */,
