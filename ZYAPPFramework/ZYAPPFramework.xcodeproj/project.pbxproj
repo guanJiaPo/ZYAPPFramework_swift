@@ -10,6 +10,7 @@
 		1323F2948AF232F8E4E67125 /* Pods_ZYAPPFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839F38D770534A0BA5102A89 /* Pods_ZYAPPFrameworkUITests.framework */; };
 		391C1B9022366C3B0044ECAF /* UINavigationBar+ZYCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */; };
 		395AE1D2226DBE5100C6EA29 /* ZYAlertBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395AE1D1226DBE5100C6EA29 /* ZYAlertBaseView.swift */; };
+		39752BBF239799D1009BBEAB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 39752BBB239799D0009BBEAB /* MBProgressHUD.m */; };
 		3998E3E1222F5D44002FF98D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998E3E0222F5D44002FF98D /* AppDelegate.swift */; };
 		3998E3E6222F5D44002FF98D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E4222F5D44002FF98D /* Main.storyboard */; };
 		3998E3E8222F5D46002FF98D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3998E3E7222F5D46002FF98D /* Assets.xcassets */; };
@@ -86,6 +87,8 @@
 		353BD8B49AF6D50681FB701F /* Pods_ZYAPPFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAPPFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391C1B8F22366C3B0044ECAF /* UINavigationBar+ZYCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ZYCategory.swift"; sourceTree = "<group>"; };
 		395AE1D1226DBE5100C6EA29 /* ZYAlertBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYAlertBaseView.swift; sourceTree = "<group>"; };
+		39752BBB239799D0009BBEAB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		39752BBD239799D0009BBEAB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3998E3DD222F5D44002FF98D /* ZYAPPFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAPPFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3998E3E0222F5D44002FF98D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3998E3E5222F5D44002FF98D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -212,6 +215,15 @@
 				395AE1D1226DBE5100C6EA29 /* ZYAlertBaseView.swift */,
 			);
 			path = ZYAlertBaseView;
+			sourceTree = "<group>";
+		};
+		39752BBA239799D0009BBEAB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				39752BBB239799D0009BBEAB /* MBProgressHUD.m */,
+				39752BBD239799D0009BBEAB /* MBProgressHUD.h */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		3998E3D4222F5D44002FF98D = {
@@ -418,6 +430,7 @@
 		3998E420222F64CC002FF98D /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				39752BBA239799D0009BBEAB /* MBProgressHUD */,
 				395AE1D0226DBE3C00C6EA29 /* ZYAlertBaseView */,
 				3998E474222F69B7002FF98D /* ZYCycleScrollView */,
 				3998E458222F67EA002FF98D /* ImageHelper */,
@@ -910,6 +923,7 @@
 				3998E4AA222FB959002FF98D /* ZYNavigationController.swift in Sources */,
 				3998E469222F67EA002FF98D /* MJRefreshNormalHeader.m in Sources */,
 				3998E49E222F8F88002FF98D /* UIImage+ZYCategory.swift in Sources */,
+				39752BBF239799D1009BBEAB /* MBProgressHUD.m in Sources */,
 				3998E476222F69B7002FF98D /* ZYCycleScrollView.swift in Sources */,
 				3998E463222F67EA002FF98D /* MJRefreshBackGifFooter.m in Sources */,
 				3998E471222F67EA002FF98D /* ImageHelper.swift in Sources */,

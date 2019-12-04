@@ -18,6 +18,9 @@ class ZYAlertBaseView: UIView {
     /// 点击空白区域隐藏试图，默认 true
     var bgCancel: Bool = true
     
+    /// 是否正在显现
+    private(set) var isShowing = false
+    
     /// contentView 水平方向左右间距 默认0
     var horizontalSpace: CGFloat = 0 {
         didSet {
@@ -31,15 +34,11 @@ class ZYAlertBaseView: UIView {
     /// 内容高度
     private var contentHeight: CGFloat = 0
     
-    convenience init(style: ZYAlertViewStyle, contentHeight: CGFloat) {
-        self.init(frame: UIScreen.main.bounds)
+    init(style: ZYAlertViewStyle, contentHeight: CGFloat) {
+        super.init(frame: UIScreen.main.bounds)
         self.style = style
         self.contentHeight = contentHeight
-        setUI()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame:UIScreen.main.bounds)
+        setUpUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -49,6 +48,7 @@ class ZYAlertBaseView: UIView {
     /// 子视图需要添加到contentView上
     lazy private(set) var contentView: UIView = {
         let tempView = UIView(frame: CGRect(x: 0, y: self.bounds.height, width: self.bounds.width, height: contentHeight))
+        tempView.backgroundColor = kHexColor(rgb: 0xffffff)
         return tempView
     }()
     
@@ -56,18 +56,21 @@ class ZYAlertBaseView: UIView {
         let view = UIView(frame: self.bounds)
         view.backgroundColor = kHexColor(rgb: 0x000000)
         view.alpha = 0
-        let tap = UITapGestureRecognizer(target: self, action: #selector(hide))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(bgClickedAction))
         view.addGestureRecognizer(tap)
         return view
     }()
     
-    private func setUI() {
+    private func setUpUI() {
+        self.isHidden = true
         self.addSubview(backgroundView)
         self.addSubview(self.contentView)
     }
     
     //MARK: public method
-    @objc private func hide() {
+    
+    /// 点击背景
+    @objc func bgClickedAction() {
         if self.bgCancel {
             self.dismiss()
         }
@@ -114,6 +117,8 @@ class ZYAlertBaseView: UIView {
     //MARK: private method
     
     private func showAnimation() {
+        self.isHidden = false
+        self.isShowing = true
         self.contentView.frame = CGRect(x: self.contentView.x, y: self.height, width: self.contentView.bounds.width, height: self.contentView.bounds.height)
         
         var contentY: CGFloat = 0;
@@ -130,12 +135,13 @@ class ZYAlertBaseView: UIView {
             self.contentView.frame = CGRect(x: self.contentView.x, y: contentY, width: self.contentView.bounds.width, height: self.contentView.bounds.height)
             self.backgroundView.alpha = 0.2
         }) { (finish) in
-            
         }
     }
     
     /// 隐藏
     private func hiddenAnimation(remove: Bool, completion: (()->())?) {
+        self.isShowing = false
+        self.isHidden = false
         UIView.animate(withDuration: 0.25, animations: {
             self.contentView.frame = CGRect(x: self.contentView.x, y: self.bounds.height, width: self.contentView.bounds.width, height: self.contentView.bounds.height)
             self.backgroundView.alpha = 0
@@ -143,6 +149,8 @@ class ZYAlertBaseView: UIView {
             completion?()
             if remove {
                 self.removeFromSuperview()
+            } else {
+                self.isHidden = true
             }
         }
     }

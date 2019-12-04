@@ -8,54 +8,6 @@
 
 import UIKit
 
-// MARK: HUD
-extension UIView {
-    
-    /// 在keyWindow上展示信息, 自动隐藏
-    func showMessage(message:String?) {
-        showMessage(message: message, toView: nil)
-    }
-    
-    /// 在指定View上展示信息, 自动隐藏
-    func showMessage(message:String?, toView:UIView?) {
-        if message == nil { return }
-        var view = toView;
-        if view == nil {
-            view = UIApplication.shared.keyWindow
-        }
-        let hud = MBProgressHUD.showAdded(to:view!, animated: true)
-        hud.mode = MBProgressHUDMode.text
-        hud.label.text = message
-        hud.label.font = UIFont.systemFont(ofSize: 14)
-        //小矩形的背景色
-        hud.bezelView.color = UIColor.clear
-        //显示的文字
-        hud.label.text = message
-        //设置背景,加遮罩
-        hud.backgroundView.style = MBProgressHUDBackgroundStyle.solidColor
-        hud.removeFromSuperViewOnHide = true
-        hud.hide(animated: true, afterDelay: 2)
-    }
-    
-    func showLoading() {
-        showLoading(message: nil)
-    }
-    
-    func showLoading(message:String?) {
-        let hud = MBProgressHUD.showAdded(to:UIApplication.shared.keyWindow!, animated: true)
-        hud.mode = MBProgressHUDMode.indeterminate
-        hud.label.text = message
-        hud.label.font = UIFont.systemFont(ofSize: 14)
-        hud.bezelView.color = UIColor.clear
-        //设置背景,加遮罩
-        hud.backgroundView.style = MBProgressHUDBackgroundStyle.solidColor
-    }
-    
-    func hiddenLoading() {
-        MBProgressHUD.hide(for: UIApplication.shared.keyWindow!, animated: true)
-    }
-}
-
 // MARK: 分割线
 extension UIView {
     func addBroder(frame:CGRect, borderCorlor:UIColor) {
@@ -253,4 +205,49 @@ extension UIView {
             self.frame = frame
         }
     }
+}
+
+// MARK: HUD
+
+/// 在指定View上展示信息, 默认2s自动隐藏
+func ZYShowMessage(message:String?, toView:UIView? = nil, afterDelay: TimeInterval = 2) {
+    if message == nil { return }
+    var view = toView;
+    if view == nil {
+        view = UIApplication.shared.keyWindow
+    }
+    let hud = MBProgressHUD.showAdded(to:view!, animated: true)
+    hud.mode = MBProgressHUDMode.text
+    hud.label.text = message
+    hud.label.font = UIFont.systemFont(ofSize: 13)
+    hud.label.textColor = UIColor.white
+    hud.label.numberOfLines = 0
+    //显示的文字
+    hud.label.text = message
+    hud.margin = 14
+    //内容背景色
+    hud.bezelView.color = UIColor(red:0, green:0, blue:0, alpha: 0.8)
+    //设置背景,纯色
+    hud.bezelView.style = MBProgressHUDBackgroundStyle.solidColor
+    hud.removeFromSuperViewOnHide = true
+    hud.hide(animated: true, afterDelay: afterDelay)
+}
+
+/// 加载
+func ZYShowLoading(message: String? = nil, toView: UIView? = nil) {
+    var view = toView;
+    if view == nil {
+        view = UIApplication.shared.keyWindow
+    }
+    let hud = MBProgressHUD.showAdded(to:view!, animated: true)
+    hud.mode = MBProgressHUDMode.indeterminate
+    hud.label.text = message
+    hud.label.font = UIFont.systemFont(ofSize: 14)
+    hud.bezelView.color = UIColor.clear
+    //设置背景,加遮罩
+    hud.backgroundView.style = MBProgressHUDBackgroundStyle.solidColor
+}
+
+func ZYHiddenLoading() {
+    MBProgressHUD.hide(for: UIApplication.shared.keyWindow!, animated: true)
 }

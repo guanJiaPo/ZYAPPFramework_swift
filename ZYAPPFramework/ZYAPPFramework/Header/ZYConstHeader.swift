@@ -7,6 +7,14 @@
 //
 
 /*************************** 静态常量 ***********************************/
-
 import Foundation
 import SnapKit
+
+let kScreenWidth = ZYTheme.screenWidth
+let kScreenHeight = ZYTheme.screenHeight
+let kStatusBarHeight = ZYTheme.statusBarHeight
+let kNavTotalHeight = ZYTheme.navTotalHeight
+let kSafeAreaBottom = ZYTheme.safeAreaBottom
+
+
+let kThemeColor = kHexColor(rgb: 0x4BADF8)

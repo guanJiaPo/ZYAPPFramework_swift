@@ -7,11 +7,10 @@ target 'ZYAPPFramework' do
 
   # Pods for ZYAPPFramework
   
-  pod 'ESTabBarController-swift'#目前最高支持swift4.0
+  pod 'ESTabBarController-swift'
   pod 'SHFullscreenPopGestureSwift'
   pod 'SnapKit', '~> 4.0.0'
   pod 'Alamofire'
-  pod 'MBProgressHUD'
   pod 'WCDB.swift'
   pod 'HandyJSON'
   pod 'Kingfisher'
